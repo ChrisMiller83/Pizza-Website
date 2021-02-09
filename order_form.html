@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Checkout</title>
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="order_form.html">Order</a>
+    </nav>
+  </div>
+
+</head>
+<body>
+  <br>
+  <br>
+  <br><br>
+  <h1>Chris' Pizza</h1>
+  <br><br><br><br>
+  <div class="order_form">  
+    <form>
+      <div class="text">
+        <fieldset>
+          <legend>Customer Info</legend>
+          <p>
+            <legend>Is this for Delivery or Carryout</legend>
+          <p>
+            <label><input type="radio" name="delivery " id="delivery" value="yes" checked />Delivery</label>
+          </p>
+          <p>
+            <label><input type="radio" name="delivery " id="carryout" value="no" />Carryout</label>
+          </p>
+    
+          <p></p>
+          <label for="first-name">First Name:</label>
+          <br>
+          <input type="text" name="" id="first-name" placeholder="Enter your first name" style="height: 40px; width: 300px;" pattern="[A-Za-z]{2,12}" title="Use only letters between 2-12 characters" required/>
+          </p>
+          <p>
+            <label for="last-name">Last Name:</label>
+            <br>
+            <input type="text" name="" id="last-name" placeholder="Enter your last name" style="height: 40px; width: 300px;" pattern="[A-Za-z]{2,12}" title="Use only letters between 2-12 characters" required/>
+          </p>
+          <p>
+            <label for="address">Address:</label>
+            <br>
+            <input type="address" name="" id="address" placeholder="Enter your home address" style="height: 40px; width: 300px;" pattern="[A-Za-z0-9]{2,25}" title="Use only letters and numbers between 2-25 characters" required/>
+          </p>
+          <p>
+            <label for="city">City:</label>
+            <br>
+            <input type="text" name="" id="city" placeholder="Enter your city" style="height: 40px; width: 300px;" required />
+          </p>
+          <p>
+            <label for="state">State:</label>
+            <br>
+            <input type="text" name="" id="State" placeholder="Enter your State" style="height: 40px; width: 300px;" required />
+          </p>
+          <p>
+            <label for="zip">Zip Code:</label>
+            <br>
+            <input type="number" name="" id="zip" placeholder="Enter your zip code"style="height: 40px; width: 300px;" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your @ email" style="height: 40px; width: 300px;" required />
+          </p>
+          <legend>Can we contact you for upcoming deals!</legend>
+          <p>
+            <label>
+              <input type="radio" name="contact" id="yes" value="yes" checked /> Yes
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="contact" id="no" value="no" /> No
+            </label>
+          </p>
+
+   
+          <legend>Payment Info</legend>
+          <p>
+            <label for="payment-select">How will you be paying?</label>
+          </p>
+          <select name="payment" id="payment-select" style="height: 40px; width: 300px;">
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="credit card">Mastercard</option>
+            <option value="credit card">Visa</option>
+            <option value="credit card">American Express</option>
+            <option value="cash">Cash</option>
+          </select>
+          <p></p>
+  
+          <legend>Credit Card Info</legend>
+          <p>
+            <label for="nameoncard">Name on Card:</label>
+            <br>
+            <input type="text" name="" id="nameoncard" placeholder="Enter the name on your credit card" style="height: 40px; width: 300px;"/>
+          </p>
+          <p>
+            <label for="card-number">Card Number:</label>
+            <br>
+            <input type="text" name="" id="card-number" placeholder="4444-4444-4444-4444" style="height: 40px; width: 300px;"/>
+          </p>
+          <p>
+            <label for="csv">CSV (number on back of card):</label>
+            <br>
+            <input type="text" name="" id="csv" placeholder="123" style="height: 40px; width: 300px;" />
+          </p>
+          <p>
+            <label for="expiration date">Expiration Date:</label>
+            <br>
+            <select name="expireMM" id="expireMM" style="height: 40px; width: 150px;">
+              <option value="">Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select name="expireYY" id="expireYY" style="height: 40px; width: 100px;">
+              <option value="">Year</option>
+              <option value="21">2021</option>
+              <option value="22">2022</option>
+              <option value="23">2023</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+            </select>
+            <input class="inputCard" type="hidden" name="expiry" id="expirey" maxlength="4" />
+          </p>
+            <input type="submit" id="submit-button" value="Submit" style="height: 50px; width: 150px;" />
+        </fieldset>
+      </div>
+    </form>
+  </div>
+   
+</body>
+</html>

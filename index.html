@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <div class="nav-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="order_form.html">Order</a>      
+    </nav>
+  </div>
+
+</head>
+<body>
+  <br><br>
+  <h1>Chris' Pizza</h1>
+  <br><br><br><br>
+  <div class="row">
+    <div class="column">
+      <img src="./Images/Pepperoni_Explosion.jpeg" width="250" height="200" alt="Pepperoni_Explosion Pizza">
+      <h5>PEPPERONI EXPLOSION</h5>
+    </div>    
+    <div class="column">
+      <img src="./Images/Meatlover.jpeg" width="250" height="200" alt="Meat Lover Pizza">
+      <h5>MEAT LOVER</h5>
+    </div>
+    <div class="column">
+      <img src="./Images/Cheese.jpeg" width="250" height="200" alt="Cheese Pizza">
+      <h5>CHEESE</h5>
+    </div>
+    <div class="column">
+      <img src="./Images/Pepperoni.jpeg" width="250" height="200" alt="Pepperoni Pizza">
+      <h5>PEPPERONI</h5>
+    </div>
+    <div class="column">
+      <img src="./Images/Veggie.jpeg" width="250" height="200" alt="Veggie Pizza">
+      <h5>VEGGIE</h5>
+    </div>
+    <div class="column">
+      <img src="./Images/The_works.jpeg" width="250" height="200" alt="The works Pizza">
+      <h5>THE WORKS</h5>
+    </div>
+  </div>
+ 
+  <form>
+    <div class="text">
+      <fieldset>
+        <legend>Specialty Pizzas</legend>
+        <select name="pizzas" id="specialty-pizzas" style="height: 40px; width: 300px;">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="pepperoni-explosion">PEPPERONI-EXPLOSION</option>
+          <option value="meat-lover">Meatlover</option>
+          <option value="the works">The Works</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="cheese">Cheese</option>
+          <option value="veggie">Veggie</option>
+        </select>
+        <p></p>
+        <legend>Crust</legend>
+        <select name="crust" id="crust" style="height: 40px; width: 300px;">
+          <option value="" disabled selected>--Please choose an option--</option>
+          <option value="thin">Thin</option>
+          <option value="reg">Regular</option>
+          <option value="stuffed">Stuffed</option>
+        </select>
+        <p></p>
+        <legend>Extra Toppings (You can choose more than one)</legend>
+        <p>
+          <label><input type="checkbox" checked />None</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Pepperoni</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Hamburger</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Sausage</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Bacon</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Onions</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Bellpepers</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Mushrooms</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Black Olives</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Banana Peppers</label>
+        </p>
+        <p>
+          <label><input type="checkbox" />Pineapple</label>
+        </p>
+
+        <p>
+          <label><input type="checkbox" />Cheese</label>
+        </p>
+        <br>
+        <input type="submit" id="submit-button" value="Submit" style="height: 50px; width: 150px;" />
+        <br>
+        <br>
+      </fieldset>
+    </div>
+  </form>
+
+  <script src="./form_1.js"></script>
+</body>
+</html>
